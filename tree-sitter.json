@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "bencode",
+      "camelcase": "bencode",
+      "title": "bencode",
+      "scope": "source.bencode",
+      "file-types": [
+        "bencode"
+      ],
+      "injection-regex": "^bencode$",
+      "class-name": "TreeSitterBencode"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "bencode grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Samasaur1",
+        "email": "30577766+Samasaur1@users.noreply.github.com",
+        "url": "https://github.com/Samasaur1"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/Samasaur1/tree-sitter-bencode"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
