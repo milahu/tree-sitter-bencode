@@ -10,7 +10,7 @@
 module.exports = grammar({
   name: "bencode",
 
-  externals: $ => [ $._string_length_prefix, $._string_value ],
+  externals: $ => [ $._string_length_prefix, $.string_value ],
   extras: $ => [],
 
   rules: {
@@ -39,7 +39,7 @@ module.exports = grammar({
     string: $ => seq(
       field('length_prefix', $._string_length_prefix),
       field('colon_separator', ":"),
-      field('value', $._string_value)
+      field('value', $.string_value)
     ),
     int: $ => seq(
       field('open', "i"),
