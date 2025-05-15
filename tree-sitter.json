@@ -9,6 +9,7 @@
       "file-types": [
         "bencode"
       ],
+      "highlights": ["queries/highlights.scm"],
       "injection-regex": "^bencode$",
       "class-name": "TreeSitterBencode"
     }
