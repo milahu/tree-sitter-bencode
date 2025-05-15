@@ -11,6 +11,7 @@ module.exports = grammar({
   name: "bencode",
 
   externals: $ => [ $._string_length_prefix, $._string_value ],
+  extras: $ => [],
 
   rules: {
     // TODO: add the actual grammar rules
