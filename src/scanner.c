@@ -79,5 +79,7 @@ bool tree_sitter_bencode_external_scanner_scan(
             // invalid length; we should never reach this case
             return false;
         }
+    } else {
+        return false;
     }
 }
