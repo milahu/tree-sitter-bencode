@@ -1,0 +1,51 @@
+===
+1
+===
+d3:bard6:foobari23e6:sketch6:parrote3:fooi42ee
+---
+
+(source_file
+  (dictionary
+    (string
+      (string_value))
+    (dictionary
+      (string
+        (string_value))
+      (int)
+      (string
+        (string_value))
+      (string
+        (string_value)))
+    (string
+      (string_value))
+    (int)))
+
+===
+2
+===
+d8:announce22:udp://tracker/announce4:infod6:lengthi4372041675e4:name9:some_name12:piece lengthi2097152e6:pieces20:xxxxxxxxxxxxxxxxxxxxee
+---
+
+(source_file
+  (dictionary
+    (string
+      (string_value))
+    (string
+      (string_value))
+    (string
+      (string_value))
+    (dictionary
+      (string
+        (string_value))
+      (int)
+      (string
+        (string_value))
+      (string
+        (string_value))
+      (string
+        (string_value))
+      (int)
+      (string
+        (string_value))
+      (string
+        (string_value)))))
