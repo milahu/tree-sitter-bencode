@@ -48,14 +48,14 @@ bool tree_sitter_bencode_external_scanner_scan(
   const bool *valid_symbols
 ) {
     if (valid_symbols[STRING_LENGTH_PREFIX]) {
-        if (lexer->lookahead < 48 || lexer->lookahead > 57) {
+        if (lexer->lookahead < '0' || lexer->lookahead > '9') {
             // This covers EOF bc it will return 0
             return false;
         }
-        int len = lexer->lookahead - 48;
+        int len = lexer->lookahead - '0';
         lexer->advance(lexer, false);
-        while (lexer->lookahead >= 48 && lexer->lookahead <= 57) {
-            int digit = lexer->lookahead - 48;
+        while (lexer->lookahead >= '0' && lexer->lookahead <= '9') {
+            int digit = lexer->lookahead - '0';
             len *= 10;
             len += digit;
             lexer->advance(lexer, false);
