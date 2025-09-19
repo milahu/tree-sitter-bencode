@@ -15,10 +15,10 @@ module.exports = grammar({
 
   rules: {
     // TODO: add the actual grammar rules
-    source_file: $ => $.atom,
+    source_file: $ => $._value,
 
 
-    atom: $ => choice(
+    _value: $ => choice(
       $.dictionary,
       $.list,
       $.string,
@@ -27,12 +27,12 @@ module.exports = grammar({
 
     dictionary: $ => seq(
       field('open', "d"),
-      repeat(seq($.string, $.atom)),
+      repeat(seq($.string, $._value)),
       field('close', "e")
     ),
     list: $ => seq(
       field('open', "l"),
-      repeat($.atom),
+      repeat($._value),
       field('close', "e")
     ),
     // string: $ => "5:hello",
