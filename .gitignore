@@ -45,3 +45,9 @@ zig-out/
 *.tar.gz
 *.tgz
 *.zip
+
+# output files of "tree-sitter generate"
+src/grammar.json
+src/node-types.json
+src/parser.c
+src/tree_sitter/
